@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Indrajitdey45/Indrajit-Dey---Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Indrajitdey45/Indrajit-Dey---Portfolio/issues"
+  },
+  "homepage": "https://indrajitdey45.github.io/Indrajit-Dey---Portfolio",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
