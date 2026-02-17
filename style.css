@@ -1081,15 +1081,46 @@ button:active {
   padding: 8px 8px;
   border-radius: 5px;
 }
-.fa-linkedin-in:hover{
-  background-color: #0A66C2;
+.fa-linkedin-in:hover {
+  background-color: #0a66c2;
   color: #fff;
 }
-.fa-github:hover{
+.fa-github:hover {
   background-color: #181717;
   color: #fff;
 }
-.fa-instagram:hover{
-  background: #E4405F;
+.fa-instagram:hover {
+  background: #e4405f;
   color: #fff;
+}
+@media (max-width: 412px) {
+  #page1 {
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  .bottom {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+  .hero h3 {
+    left: 29px;
+    top: -12px;
+    font-size: 20px;
+  }
+  .hero .left-part {
+    z-index: 99;
+    width: 100%;
+    padding-left: 2rem;
+    top: 40rem;
+  }
+  .hero .right-part img {
+    z-index: 3;
+    left: 0rem;
+    height: 40rem;
+  }
 }
