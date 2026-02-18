@@ -83,7 +83,7 @@ npm start
 
 * GitHub: https://github.com/Indrajitdey45
 * LinkedIn: https://www.linkedin.com/in/indrajit-dey-56819a294/
-* Email: https://www.instagram.com/indrajit_dey_45/
+* Instagram: https://www.instagram.com/indrajit_dey_45/
 
 ---
 
