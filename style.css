@@ -101,7 +101,7 @@ body {
   }
 }
 .bottom {
-  height: 64px;
+  height: 14vh;
   width: 100%;
   background-color: #000;
   position: absolute;
@@ -381,7 +381,7 @@ body {
 }
 .resm {
   position: absolute;
-  top: 78rem;
+  top: 80rem;
   left: 14%;
 }
 #page3 {
@@ -656,7 +656,7 @@ body {
 .skils-div .skil {
   color: white;
   height: 30px;
-  width: 93px;
+  min-width: 50px;
   position: relative;
   display: flex;
   align-items: center;
