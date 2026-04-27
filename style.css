@@ -177,6 +177,10 @@ body {
   color: #ff4625;
 }
 
+.navbar .about a.active {
+  color: #ff4625;
+}
+
 .button-87 {
   margin: 10px;
   padding: 10px 29px;

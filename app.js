@@ -28,3 +28,27 @@ const charObserver = new IntersectionObserver(
 );
 
 charElements.forEach((el) => charObserver.observe(el));
+
+// navbar highlighting based on current page
+const navLinks = document.querySelectorAll(".about a");
+const pages = document.querySelectorAll("#main > div");
+
+const navObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Remove active class from all links
+        navLinks.forEach((link) => link.classList.remove("active"));
+
+        // Find the corresponding link and add active class
+        const pageIndex = Array.from(pages).indexOf(entry.target);
+        if (pageIndex !== -1 && navLinks[pageIndex]) {
+          navLinks[pageIndex].classList.add("active");
+        }
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+pages.forEach((page) => navObserver.observe(page));
