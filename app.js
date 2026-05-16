@@ -51,4 +51,31 @@ const navObserver = new IntersectionObserver(
   { threshold: 0.3 }
 );
 
+
 pages.forEach((page) => navObserver.observe(page));
+
+// ── Hamburger menu toggle ──
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const mobileMenu   = document.getElementById("mobileMenu");
+
+hamburgerBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  hamburgerBtn.classList.toggle("open");
+  mobileMenu.classList.toggle("active");
+});
+
+// Close menu when a link is clicked
+mobileMenu.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburgerBtn.classList.remove("open");
+    mobileMenu.classList.remove("active");
+  });
+});
+
+// Close menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (!mobileMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+    hamburgerBtn.classList.remove("open");
+    mobileMenu.classList.remove("active");
+  }
+});
